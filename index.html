@@ -9,72 +9,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <p>Use this banner to inform your users of something important.</p>
+        <p class="first-header-text">Use this banner to inform your users of something important.</p>
     </header>
     <header>
-        <div class="container">
+        <div class="container second-header">
             <nav>
-                <ul>
-                    <li><a href="">Overview</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="list nav-list">
+                    <li class="nav-list-item"><a href="">Overview</a></li>
+                    <li class="nav-list-item"><a href="">Pages</a></li>
+                    <li class="nav-list-item"><a href="">Services</a></li>
+                    <li class="nav-list-item"><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <button type="button">Purchase Now</button>
+            <button type="button" class="header-button">Purchase Now</button>
         </div>        
     </header>
     <main>
         <div class="container">
             <section>
                 <div>
-                    <h2>Meet Lemon</h2>
-                    <h3>Build a better site for enterprise business.</h3>
-                    <p>Lemon contains a huge selection of common and useful components and layouts that help you build the best site for your business and clients.</p>
-                    <img src="" alt="Three lending pages for example">
+                    <h2 class="first-section-main-title">Meet Lemon</h2>
+                    <p class="first-section-title">Build a better site for enterprise business.</p>
+                    <p class="first-section-text">Lemon contains a huge selection of common and useful components and layouts that help you build the best site for your business and clients.</p>
+                    <img src="./img/first-section-image.jpg" alt="Three lending pages for example" width="1280" height="480" class="first-section-image">
                 </div>
                 <div>
-                    <h3>Browse the collection of layouts & pages.</h3>
-                    <p>Discover all the components and pages below. These can be resused across all your projects and easily customised to suit your brands and projects.</p>
-                    <ul>
-                        <li>
-                            <svg>
-                                <use></use>
+                    <div class="collection-description">
+                        <h3 class="collection-title">Browse the collection of layouts & pages.</h3>
+                        <p class="collection-text">Discover all the components and pages below. These can be resused across all your projects and easily customised to suit your brands and projects.</p>
+                    </div>                  
+                    <ul class="list collection-list">
+                        <li class="collection-list-item">
+                            <svg class="collection-list-icon cube">
+                                <use href="./css/sprite.svg#cube" class="collection-list-use" width="25.46" heigth="25.46"></use>
                             </svg>
-                            <h4>Layouts</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                            <h4 class="collection-list-title">Layouts</h4>
+                            <p class="collection-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         </li>
-                        <li>
-                            <svg>
-                                <use></use>
+                        <li class="collection-list-item">
+                            <svg class="collection-list-icon window">
+                                <use href="./css/sprite.svg#window" width="22.92" heigth="22.92"></use>
                             </svg>
-                            <h4>Sections</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                            <h4 class="collection-list-title">Sections</h4>
+                            <p class="collection-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         </li>
-                        <li>
-                            <svg>
-                                <use></use>
+                        <li class="collection-list-item">
+                            <svg class="collection-list-icon pencil">
+                                <use href="./css/sprite.svg#pencil" width="26.03" heigth="24.23"></use>
                             </svg>
-                            <h4>Components</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                            <h4 class="collection-list-title">Components</h4>
+                            <p class="collection-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         </li>
                     </ul>
-                    <button type="button">Learn more</button>
+                    <button type="button" class="collection-button">Learn more</button>
                 </div>   
             </section>
 
             <section>
-                <ul>
+                <ul class="list">
                     <li>
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>The Landing Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -91,7 +94,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Company Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -108,7 +111,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Overview Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -122,7 +125,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Pricing Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -136,7 +139,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Contact Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -150,7 +153,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Blog Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -164,7 +167,7 @@
                         <div>
                             <h2>Lemon Template</h2>
                             <h3>Account Pages</h3>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     <img src="" alt="">
                                 </li>
@@ -182,10 +185,10 @@
         </div>       
     </main>
     <footer>
-        <div class="container">
+        <div>
             <div>
                 <p>Lemon - Webflow UI Library</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <svg>
                         <use></use>
@@ -204,7 +207,7 @@
             </ul>
             </div>
             <div>
-                <ul>
+                <ul class="list">
                     <li><h4>Pages</h4></li>
                     <li>Home 1</li>
                     <li>Home 2</li>
@@ -212,7 +215,7 @@
                     <li>Careers</li>
                     <li>Career Post</li>
                 </ul>
-                <ul>
+                <ul class="list">
                     <li><h4>Pages</h4></li>
                     <li>About / Company</li>
                     <li>How It Works</li>
@@ -220,7 +223,7 @@
                     <li>Pricing 1</li>
                     <li>Pricing 2</li>
                 </ul>
-                <ul>
+                <ul class="list">
                     <li><h4>Pages</h4></li>
                     <li>Contact 1</li>
                     <li>Contact 2</li>
@@ -228,7 +231,7 @@
                     <li>Blog</li>
                     <li>Blog Post</li>
                 </ul>
-                <ul>
+                <ul class="list">
                     <li><h4>Pages</h4></li>
                     <li>Team</li>
                     <li>Account 1</li>
