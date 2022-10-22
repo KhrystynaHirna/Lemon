@@ -65,7 +65,7 @@ a {
 }
 .nav-list {
     display: flex;
-    padding: 0;
+    padding: 0;  
     margin-left: 165px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -164,9 +164,9 @@ a {
     justify-content: space-between;
 }
 .collection-list-item {
-   border: 1px solid var(--main-border-color);
-   width: 327px;
-   height: 298px;
+    border: 1px solid var(--main-border-color);
+    width: 327px;
+    height: 298px;
 }
 .collection-list-title {
     font-family: 'Outfit';
@@ -188,27 +188,29 @@ a {
     max-width: 235px;
     margin: 10px auto 0 auto;  
 }
-.collection-list-use { 
-    justify-content: center;
-    align-items: center;
-}
-.collection-list-icon { 
+.collection-icon-group {
     width: 72px;
     height: 72px;
 
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 41px;   
+    margin-top: 41px; 
+    justify-content: center; 
+    align-items: center; 
 }
-.collection-list-icon.cube {
+.collection-icon-group.cube {
     background-color: #CFF2ED;
 }
-.collection-list-icon.window {
+.collection-icon-group.window {
     background-color: #E6CFF2;  
 }
-.collection-list-icon.pencil {
+.collection-icon-group.pencil {
     background-color: #EBFA9E;
+}
+.collection-icon { 
+    width: 25px;
+    height: 25px; 
 }
 .collection-button {
     margin: 32px auto 0  auto;
@@ -219,13 +221,20 @@ a {
     cursor: pointer;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    align-items: center;  
+}
+.collection-button-text {
     font-family: 'Be Vietnam Pro';
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.32px;
+
+    margin-left: 470px;
+}
+.collection-button-vector {
+    width: 10px;
+    height: 10px;
+    margin-left: 473px;
 }
 .template-list {
      margin-top: 160px;
@@ -293,26 +302,27 @@ a {
     padding: 0;
     margin: 0;
 }
-.footer-icon-svg {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--footer-list-text-color);
-    display: flex;
+.footer-icon-list > .footer-icon-item:not(:last-child) {
+    margin-right: 16px;
 }
-.footer-icon-use {
+.footer-icon-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--footer-list-text-color);
 }
-.footer-icon-list > .footer-icon-item:not(:last-child) {
-    margin-right: 16px;
+.footer-icon-svg {
+    width: 15px;
+    height: 15px;   
 }
 .library-group {
     display: flex;
     justify-content: space-between;
     padding: 41px 80px;
 
-    border-bottom: 1px solid var(--footer-border-color);;
+    border-bottom: 1px solid var(--footer-border-color);
 }
 .library-list {
     padding: 0;
@@ -333,10 +343,12 @@ a {
     font-size: 13px;
     line-height: 1.85;
     letter-spacing: 0.28px;
-    color: var(--white-text-color);
 }
 .library-item:not(:last-child) {
     margin-bottom: 24px;
+}
+.library-item > .link {
+    color: var(--white-text-color);
 }
 .copyright-text {
     font-family: 'Be Vietnam Pro';
